@@ -83,10 +83,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WCF-DotNetFramework.BLL\WCF-DotNetFramework.BLL.csproj">
+      <Project>{c46778e1-3e34-4fbb-a533-98a297b80167}</Project>
+      <Name>WCF-DotNetFramework.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WCF-DotNetFramework.Domain\WCF-DotNetFramework.Domain.csproj">
       <Project>{04f6618b-e668-49bc-ab28-e086fa090f6a}</Project>
       <Name>WCF-DotNetFramework.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

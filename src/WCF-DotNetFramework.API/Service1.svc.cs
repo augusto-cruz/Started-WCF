@@ -7,21 +7,7 @@ namespace WCF_DotNetFramework.API
     {
         public List<User> ListUsers()
         {
-            var users = new List<User>()
-            {
-                new User
-                {
-                    Name = "Teste01",
-                    Email = "teste01@"
-                },
-                new User
-                {
-                    Name = "Teste02",
-                    Email = "teste02@"
-                }
-            };
-
-            return users;
+            return BLL.User.ListUsers();
         }
 
         public string AddUser(User user)
