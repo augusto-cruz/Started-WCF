@@ -11,17 +11,28 @@ namespace WCF_DotNetFramework.DAL
             {
                 new Domain.Entities.User
                 {
-                    Name = "Teste01",
+                    Name = "Usuario Teste 01",
                     Email = "teste01@"
                 },
                 new Domain.Entities.User
                 {
-                    Name = "Teste02",
+                    Name = "Usuario Teste 02",
                     Email = "teste02@"
                 }
             };
 
             return users;
+        }
+
+        public static string AddUser(Domain.Entities.User user)
+        { 
+            // Fake insert on DB
+            if (user.Name == null || user.Email == null)
+            {
+                return "Usuário Inválido!";
+            }
+
+            return $"Usuário Adicionado! Nome: {user.Name}";
         }
     }
 }

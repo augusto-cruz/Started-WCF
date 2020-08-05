@@ -8,5 +8,10 @@ namespace WCF_DotNetFramework.BLL
         {
             return DAL.User.ListUsers();
         }
+
+        public static string AddUser(Domain.Entities.User user)
+        {
+            return DAL.User.AddUser(user);
+        }
     }
 }

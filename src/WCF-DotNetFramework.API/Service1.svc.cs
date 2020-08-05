@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.ServiceModel.Web;
 using WCF_DotNetFramework.Domain.Entities;
 
 namespace WCF_DotNetFramework.API
 {
     public class Service1 : IService1
     {
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
         public List<User> ListUsers()
         {
             return BLL.User.ListUsers();
@@ -12,12 +14,7 @@ namespace WCF_DotNetFramework.API
 
         public string AddUser(User user)
         {
-            if (user.Name == null || user.Email == null)
-            {
-                return "Usuário Inválido!";
-            }
-
-            return $"Usuário Adicionado! Nome: {user.Name}";
+            return BLL.User.AddUser(user);
         }
     }
 }
