@@ -14,3 +14,15 @@ Para criar o projeto usando um template do VS tenha instalado o WCF (Instalaçã
 
     Novo Projeto
         > Aplicativo de Serviço WCF
+
+## WcfTestClient
+
+Aplicação cliente para realizar os testes em serviços WCF.
+
+Caminho:
+
+    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE
+
+Arquivo
+    > Adicionar Serviço
+        > Adiciona a URI do serviço Ex: `http://localhost:<port>/Service1.svc`
