@@ -3,7 +3,6 @@ using System.ServiceModel;
 
 namespace WCF_DotNetFramework.API
 {
-    // OBSERVAÇÃO: Você pode usar o comando "Renomear" no menu "Refatorar" para alterar o nome da interface "IService1" no arquivo de código e configuração ao mesmo tempo.
     [ServiceContract]
     public interface IService1
     {
@@ -13,17 +12,14 @@ namespace WCF_DotNetFramework.API
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
-
-        // TODO: Adicione suas operações de serviço aqui
     }
 
 
-    // Use um contrato de dados como ilustrado no exemplo abaixo para adicionar tipos compostos a operações de serviço.
     [DataContract]
     public class CompositeType
     {
-        bool boolValue = true;
-        string stringValue = "Hello ";
+        private bool boolValue = true;
+        private string stringValue = "Hello ";
 
         [DataMember]
         public bool BoolValue
