@@ -4,7 +4,9 @@
 
     F5
 
-O projeto já irá iniciar no serviço `api/service.svc`.
+## Requisições
+
+Para realizar uma requisição use o `WcfTestClient`
 
 ## Dependências
 
