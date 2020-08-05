@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ServiceModel;
+using System.ServiceModel.Web;
 using WCF_DotNetFramework.Domain.Entities;
 
 namespace WCF_DotNetFramework.API
@@ -9,5 +10,8 @@ namespace WCF_DotNetFramework.API
     {
         [OperationContract]
         List<User> ListUsers();
+
+        [WebInvoke(Method = "POST")]
+        string AddUser(User user);
     }
 }

@@ -11,17 +11,27 @@ namespace WCF_DotNetFramework.API
             {
                 new User
                 {
-                    Nome = "Teste01",
+                    Name = "Teste01",
                     Email = "teste01@"
                 },
                 new User
                 {
-                    Nome = "Teste02",
+                    Name = "Teste02",
                     Email = "teste02@"
                 }
             };
 
             return users;
+        }
+
+        public string AddUser(User user)
+        {
+            if (user.Name == null || user.Email == null)
+            {
+                return "Usuário Inválido!";
+            }
+
+            return $"Usuário Adicionado! Nome: {user.Name}";
         }
     }
 }
