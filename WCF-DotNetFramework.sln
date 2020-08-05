@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF-DotNetFramework.API", "src\WCF-DotNetFramework.API\WCF-DotNetFramework.API.csproj", "{6A123D23-A9C0-482E-AF2C-F60F17281FE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF-DotNetFramework.Domain", "src\WCF-DotNetFramework.Domain\WCF-DotNetFramework.Domain.csproj", "{04F6618B-E668-49BC-AB28-E086FA090F6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6A123D23-A9C0-482E-AF2C-F60F17281FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A123D23-A9C0-482E-AF2C-F60F17281FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A123D23-A9C0-482E-AF2C-F60F17281FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04F6618B-E668-49BC-AB28-E086FA090F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F6618B-E668-49BC-AB28-E086FA090F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F6618B-E668-49BC-AB28-E086FA090F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F6618B-E668-49BC-AB28-E086FA090F6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
