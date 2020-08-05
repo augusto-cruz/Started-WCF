@@ -1,25 +1,27 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using WCF_DotNetFramework.Domain.Entities;
 
 namespace WCF_DotNetFramework.API
 {
     public class Service1 : IService1
     {
-        public string GetData(int value)
+        public List<User> ListUsers()
         {
-            return string.Format("You entered: {0}", value);
-        }
+            var users = new List<User>()
+            {
+                new User
+                {
+                    Nome = "Teste01",
+                    Email = "teste01@"
+                },
+                new User
+                {
+                    Nome = "Teste02",
+                    Email = "teste02@"
+                }
+            };
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
-        {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
+            return users;
         }
     }
 }
