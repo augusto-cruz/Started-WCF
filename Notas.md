@@ -26,3 +26,13 @@ Caminho:
 Arquivo
     > Adicionar Serviço
         > Adiciona a URI do serviço Ex: `http://localhost:<port>/Service1.svc`
+
+## Arquitetura Projeto
+
+O arquivo WCF na API implementa tudo o que tem na interface de que herda.
+
+Requisição
+    > Arquivo WCF - Service.svc
+        > BLL (Camada de Negócios)
+            > DAL (Camada de acesso a dados)
+                > Response
