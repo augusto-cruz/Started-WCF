@@ -18,6 +18,11 @@ namespace WCF_DotNetFramework.DAL
                 {
                     Name = "Usuario Teste 02",
                     Email = "teste02@"
+                },
+                new Domain.Entities.User
+                {
+                    Name = "Usuario Teste 03",
+                    Email = "teste03@"
                 }
             };
 
