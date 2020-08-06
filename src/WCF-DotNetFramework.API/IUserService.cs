@@ -6,7 +6,7 @@ using WCF_DotNetFramework.Domain.Entities;
 namespace WCF_DotNetFramework.API
 {
     [ServiceContract]
-    public interface IService1
+    public interface IUserService
     {
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json)]

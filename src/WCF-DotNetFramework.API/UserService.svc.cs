@@ -4,7 +4,7 @@ using WCF_DotNetFramework.Domain.Entities;
 
 namespace WCF_DotNetFramework.API
 {
-    public class Service1 : IService1
+    public class UserService : IUserService
     {
         public List<User> ListUsers()
         {
