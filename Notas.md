@@ -36,3 +36,27 @@ Requisição
         > BLL (Camada de Negócios)
             > DAL (Camada de acesso a dados)
                 > Response
+
+<!-- ## Configurando o projeto
+
+No arquivo `Web.config`:
+
+    <system.serviceModel>
+		<serviceHostingEnvironment>
+			<serviceActivations>
+				<add 
+					factory="System.ServiceModel.Activation.ServiceHostFactory"
+					relativeAddress="api/service.svc"
+					service="WCF_DotNetFramework.API.Service"
+				/>
+			</serviceActivations>
+		</serviceHostingEnvironment>
+
+		<behaviors>
+			<serviceBehaviors>
+				<behavior>
+					<serviceMetadata httpGetEnabled="true" />
+				</behavior>
+			</serviceBehaviors>
+		</behaviors>
+	</system.serviceModel> -->
