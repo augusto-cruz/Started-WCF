@@ -9,8 +9,10 @@ namespace WCF_DotNetFramework.API
     public interface IService1
     {
         [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
         List<User> ListUsers();
 
+        [OperationContract]
         [WebInvoke(Method = "POST")]
         string AddUser(User user);
     }

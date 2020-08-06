@@ -6,7 +6,6 @@ namespace WCF_DotNetFramework.API
 {
     public class Service1 : IService1
     {
-        [WebGet(ResponseFormat = WebMessageFormat.Json)]
         public List<User> ListUsers()
         {
             return BLL.User.ListUsers();
