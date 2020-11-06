@@ -21,7 +21,7 @@ Aplicação cliente para realizar os testes em serviços WCF.
 
 Caminho:
 
-    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\WcfTestClient
+    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\WcfTestClient.exe
 
 Arquivo
     > Adicionar Serviço

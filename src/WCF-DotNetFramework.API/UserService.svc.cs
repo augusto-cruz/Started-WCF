@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.ServiceModel.Web;
 using WCF_DotNetFramework.Domain.Entities;
 
 namespace WCF_DotNetFramework.API
