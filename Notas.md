@@ -21,11 +21,11 @@ Aplicação cliente para realizar os testes em serviços WCF.
 
 Caminho:
 
-    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE
+    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\WcfTestClient
 
 Arquivo
     > Adicionar Serviço
-        > Adiciona a URI do serviço Ex: `http://localhost:<port>/Service1.svc`
+        > Adiciona a URI do serviço Ex: `http://localhost:<port>/UserService.svc`
 
 ## Arquitetura Projeto
 
